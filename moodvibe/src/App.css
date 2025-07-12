@@ -1,0 +1,24 @@
+.app {
+  min-height: 100vh; /* Ensure app takes full viewport height */
+  background-color: #fafafa; /* Light background for Instagram-like look */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Modern font stack */
+}
+
+.app__body {
+  padding: 20px; /* Add padding around feed */
+}
+
+.app__feed {
+  max-width: 600px; /* Limit feed width for readability */
+  margin-left: 10px; /* Left-shift per your request */
+  margin-right: auto; /* Center feed */
+}
+
+@media (max-width: 768px) { /* Responsive design for smaller screens */
+  .app__body {
+    padding: 10px; /* Reduce padding on mobile */
+  }
+  .app__feed {
+    margin-left: 0; /* Remove left-shift on mobile */
+  }
+}

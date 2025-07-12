@@ -1,0 +1,94 @@
+.profile {
+  max-width: 600px; /* Limit profile width */
+  margin: 20px auto; /* Center profile */
+  padding: 20px; /* Add padding */
+  background-color: white; /* White background */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.profile__header {
+  display: flex; /* Flexbox for header layout */
+  gap: 20px; /* Space between avatar and info */
+  margin-bottom: 20px; /* Space below header */
+}
+
+.profile__avatar {
+  width: 100px; /* Avatar size */
+  height: 100px; /* Avatar size */
+  border-radius: 50%; /* Circular avatar */
+}
+
+.profile__info h2 {
+  font-size: 20px; /* Username size */
+  margin: 0; /* No margin */
+}
+
+.profile__info p {
+  font-size: 14px; /* Bio size */
+  color: #8e8e8e; /* Gray text */
+}
+
+.profile__stats {
+  display: flex; /* Flexbox for stats */
+  gap: 20px; /* Space between stats */
+  margin: 10px 0; /* Space around stats */
+}
+
+.profile__actions button {
+  background: #0095f6; /* Blue button */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 8px 16px; /* Button padding */
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 10px; /* Space between buttons */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.profile__actions button:hover {
+  opacity: 0.9; /* Slight fade on hover */
+}
+
+.profile__post-form textarea {
+  width: 100%; /* Full width */
+  height: 100px; /* Textarea height */
+  padding: 10px; /* Inner padding */
+  border: 1px solid #dbdbdb; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  resize: none; /* Prevent resizing */
+  margin-bottom: 10px; /* Space below textarea */
+}
+
+.profile__post-form select {
+  padding: 8px; /* Select padding */
+  border: 1px solid #dbdbdb; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 10px; /* Space below select */
+}
+
+.profile__post-form button {
+  background: linear-gradient(45deg, #0095f6, #00c4b4); /* Gradient button */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 8px 16px; /* Button padding */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.profile__post-form button:hover {
+  opacity: 0.9; /* Slight fade on hover */
+}
+
+.profile__posts {
+  margin-top: 20px; /* Space above posts */
+}
+
+@media (max-width: 768px) { /* Responsive design */
+  .profile {
+    padding: 10px; /* Reduce padding on mobile */
+  }
+  .profile__header {
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center items */
+  }
+}

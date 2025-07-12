@@ -1,0 +1,91 @@
+.login {
+  max-width: 400px; /* Limit form width */
+  width: 90%; /* Responsive width */
+  margin: 50px auto; /* Center form */
+  padding: 30px; /* Add padding (per your request) */
+  background-color: white; /* White background */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center text */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Modern font */
+}
+
+.login h2 {
+  font-size: 24px; /* Title size */
+  margin-bottom: 20px; /* Space below title */
+  color: #262626; /* Dark text */
+}
+
+.login form {
+  display: flex; /* Flexbox for form layout */
+  flex-direction: column; /* Stack inputs vertically */
+  gap: 15px; /* Space between inputs */
+}
+
+.login input {
+  width: 100%; /* Full width */
+  padding: 12px; /* Input padding */
+  border: 1px solid #dbdbdb; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 14px; /* Readable font size */
+  background-color: #fafafa; /* Light background */
+  outline: none; /* Remove default outline */
+  transition: border-color 0.2s ease; /* Smooth border transition */
+}
+
+.login input:focus {
+  border-color: #0095f6; /* Blue border on focus */
+}
+
+.login button {
+  background: linear-gradient(45deg, #0095f6, #00c4b4); /* Gradient button */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 12px; /* Button padding */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Readable font size */
+  font-weight: 600; /* Bold text */
+  cursor: pointer; /* Pointer cursor */
+  transition: opacity 0.2s ease; /* Smooth hover transition */
+}
+
+.login button:hover {
+  opacity: 0.9; /* Slight fade on hover */
+}
+
+.login__error {
+  color: #ed4956; /* Red error text */
+  font-size: 14px; /* Readable size */
+  margin: 10px 0; /* Space around error */
+}
+
+.login__links {
+  margin-top: 15px; /* Space above links */
+  display: flex; /* Flexbox for links */
+  flex-direction: column; /* Stack vertically */
+  gap: 10px; /* Space between links */
+}
+
+.login__links a {
+  color: #0095f6; /* Blue link color */
+  text-decoration: none; /* No underline */
+  font-size: 14px; /* Readable size */
+}
+
+.login__links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+@media (max-width: 768px) { /* Responsive design */
+  .login {
+    margin: 20px auto; /* Reduce margin on mobile */
+    padding: 20px; /* Reduce padding */
+  }
+  .login h2 {
+    font-size: 20px; /* Smaller title */
+  }
+  .login input,
+  .login button {
+    padding: 10px; /* Smaller padding */
+  }
+}

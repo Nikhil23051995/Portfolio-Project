@@ -1,0 +1,46 @@
+.post {
+  background-color: white; /* White background */
+  border: 1px solid #dbdbdb; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between posts */
+  padding: 15px; /* Inner padding */
+}
+
+.post__header {
+  display: flex; /* Flexbox for header layout */
+  align-items: center; /* Center vertically */
+  gap: 10px; /* Space between avatar and text */
+}
+
+.post__avatar {
+  width: 40px; /* Avatar size */
+  height: 40px; /* Avatar size */
+  border-radius: 50%; /* Circular avatar */
+}
+
+.post__header h3 {
+  font-size: 16px; /* Username size */
+  margin: 0; /* No margin */
+}
+
+.post__header p {
+  font-size: 14px; /* Mood size */
+  color: #8e8e8e; /* Gray text */
+  margin: 0; /* No margin */
+}
+
+.post__content {
+  margin: 10px 0; /* Space around content */
+  font-size: 14px; /* Readable size */
+}
+
+.post__timestamp {
+  font-size: 12px; /* Smaller size */
+  color: #8e8e8e; /* Gray text */
+}
+
+@media (max-width: 768px) { /* Responsive design */
+  .post {
+    padding: 10px; /* Reduce padding on mobile */
+  }
+}

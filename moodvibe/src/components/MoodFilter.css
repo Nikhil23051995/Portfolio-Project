@@ -1,0 +1,12 @@
+.mood-filter select {
+  padding: 8px; /* Select padding */
+  border: 1px solid #dbdbdb; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #fafafa; /* Light background */
+  font-size: 14px; /* Readable size */
+}
+
+.mood-filter select:focus {
+  outline: none; /* Remove default outline */
+  border-color: #0095f6; /* Blue border on focus */
+}
