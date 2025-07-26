@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
 
+import React from "react";
+import useTrafficLight from "./useTrafficLight"; 
+import "./App.css"; 
 function App() {
+  const { light, timer } = useTrafficLight();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Traffic Light</h2>
+      <div className="traffic-light">
+        {["green", "yellow", "red"].map((color) => (
+          <div
+            key={color}
+            className={`light ${color} ${light === color ? "active" : ""}`}
+          >
+            {light === color && <span>{Math.ceil(timer)}s</span>}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
