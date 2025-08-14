@@ -1,0 +1,20 @@
+#open powershell in vs code - type - 
+# code $profile
+# New-Item -Path $profile -ItemType File -Force
+# $env:PATH += ";C:\Program Files\nodejs;C:\Program Files\MongoDB\Server\7.0\bin"
+
+# mongod       // to run mongodb in powershell vs code.
+
+# open another powershell terminal and make backend up
+# nmp start
+
+
+
+
+
+#netstat -ano | findstr :5000  //to kill running backend at 5000 port
+output:TCP    0.0.0.0:5000    0.0.0.0:0    LISTENING    12345
+
+
+taskkill /PID 12345 /F
+npm start
